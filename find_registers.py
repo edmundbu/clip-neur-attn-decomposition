@@ -5,7 +5,6 @@ from torchvision.datasets import ImageNet
 from torch.utils.data import DataLoader, Subset
 from tqdm import tqdm
 import numpy as np
-import matplotlib.pyplot as plt
 
 from utils.factory import create_model_and_transforms
 from utils.get_dims import get_dims

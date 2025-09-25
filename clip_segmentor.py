@@ -11,7 +11,7 @@ from hook_replace import hook_register_attn_sink, hook_register_neurons_zero
 from utils.text_embedding_templates import OPENAI_IMAGENET_TEMPLATES
 from utils.factory import create_model_and_transforms, get_tokenizer
 from utils.get_dims import get_dims
-from utils.visualization import show_image, visualize_grid, overlay_heatmap
+# from utils.visualization import show_image, visualize_grid, overlay_heatmap
 from utils.classes import pascal_context_classes
 from segment_utils import get_topk_nh_pairs, interpolate_sink, denorm_for_display, threshold_pairs
 

@@ -1,7 +1,6 @@
 import argparse
 
 import numpy as np
-import matplotlib.pyplot as plt
 
 from utils.get_dims import get_dims
 from utils.factory import create_model_and_transforms
@@ -45,13 +44,6 @@ def main(args):
     mask = topk_avg >= thresh
     np.save(args.mask_save_path, mask)
     print(f"{np.sum(mask)} {args.mode} ({100-args.percentile}%) saved!")
-
-    if args.show_hist:
-        plt.hist(flat_vals, bins=10000)  
-        plt.xlim(0, np.max(flat_vals))
-        plt.xlabel('Mean value')
-        plt.ylabel('Frequency')
-        plt.axvline(x=thresh, color='red', linestyle='--', linewidth=2)
 
 
 if __name__ == "__main__":

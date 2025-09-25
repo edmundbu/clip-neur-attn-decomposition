@@ -1,10 +1,16 @@
+# Interpreting Resnet-based CLIP via Neuron-Attention Decomposition 
+[Edmund Bu](https://www.linkedin.com/in/edmund-bu/) and [Yossi Gandelsman](https://yossigandelsman.github.io/) \
+📜[`Paper`](https://arxiv.org/abs/2509.19943) | 🌐[`Website`](https://edmundbu.github.io/clip-neur-attn/)
+
+🔥 Previous work interpreting CLIP-ViT: [*Second-Order Lens*](https://yossigandelsman.github.io/clip_neurons/), [*TextSpan*](https://yossigandelsman.github.io/clip_decomposition/index.html)
+
 ## Dependencies
 
 ```setup
 pip install einops tqdm ftfy regex scipy scikit-learn matplotlib seaborn
 ```
 
-To run semantic segmentation, please install PyTorch 1.10.x (otherwise most PyTorch versions work) and the following packages:
+To run semantic segmentation, please install PyTorch 1.10.x (otherwise the latest PyTorch versions work) and the following packages:
 
 ```setup
 pip install openmim
@@ -108,4 +114,15 @@ To track concepts over Stanford Cars using neuron-head pairs:
 python distribution_shift.py --pcs_path 'caches/pc0.npy'
 ```
 
-## BibTeX (TODO)
+## BibTeX
+```bibtex
+@misc{bu2025interpretingresnetbasedclipneuronattention,
+      title={Interpreting ResNet-based CLIP via Neuron-Attention Decomposition}, 
+      author={Edmund Bu and Yossi Gandelsman},
+      year={2025},
+      eprint={2509.19943},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2509.19943}, 
+}
+```
